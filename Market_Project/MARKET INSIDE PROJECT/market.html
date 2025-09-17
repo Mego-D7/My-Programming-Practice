@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The best market to shopping">
+    <meta name="keywords" content="shopping,market,the easy market">
+    <title>DESKTOP MARKET</title>
+    <link rel="icon" href="MARKET.ico">
+    <link rel="stylesheet" href="market.css">
+</head>
+
+<body>
+    <div>
+        
+<header id="header">
+    
+    <img src="trade.png" alt="Trade Now 😊" id="trade">
+    <div id="hi"><h2 style="padding-top: 33px;">HI</h2><h3 id="nameuser"></h3></div>
+    <div id="info"></div>
+    <div class="bar">
+        <ol id="active">
+            <li id="home" onclick="act('home')"><img src="home.png" height="50px" width="50px"></a> <br>home</li>
+            <li id="buy" onclick="act('buy')"><img src="buy.png" height="50px" width="55px"><br>buy</li>
+            <li id="sell" onclick="act('sell')"><img src="sell.png" height="50px" width="55px"><br>sell</li>
+            <li id="saved" onclick="act('saved')"><img src="save.png" height="50px" width="50px"><br>saved</li>
+            <li id="popular" onclick="act('popular')"><img src="famous.png" height="50px" width="50px"><br>popular</a></li>
+            <li id="setting" onclick="act('setting')"><img src="setting.png" height="50px" width="50px"><br>setting</li>
+        </ol> 
+    
+</div>
+<br>  
+</header>
+
+<aside id="asides" style="position: absolute;">
+    <div class="container" id="lister" onclick="myFunction()">
+        <div class="bar1" id="barmenu1"></div>
+        <div class="bar2" id="barmenu2"></div>
+        <div class="bar3" id="barmenu3"></div>
+      </div>
+<div class="hmenu" id="hmenu">
+    <ul class="menu">
+        <details>
+            <summary id="sum" style="font-size: 17px;cursor:row-resize;border: solid rgb(0, 104, 129);border-width: 0 0 1.5px 0;"><img src="computer.png" alt="💻" width="20px" height="20px" style="margin-top: 5px;pointer-events:none;"> Computer</summary>
+            <ol class="imgmenu">
+                <li id="All" onclick="foc('All','all')"><img src="computer.png" alt="💻">All</li>
+                <li id="Case" onclick="foc('Case','case')"><img src="case.png" alt="💻">Case</li>
+                <li id="Motherboard" onclick="foc('Motherboard','motherboard')"><img src="mother bourd.png" alt="💻">Motherboard</li>
+                <li id="Processor" onclick="foc('Processor','processor')"><img src="processor.png" alt="💻">Processor</li>
+                <li id="Graphics" onclick="foc('Graphics','graphics')"><img src="graphics card.png" alt="💻">Graphics card</li>
+                <li id="Ram" onclick="foc('Ram','ram')"><img src="ram.png" alt="💻">Ram</li>
+                <li id="Hard" onclick="foc('Hard','hard')"><img src="hard disk.png" alt="💻">Hard disk</li>
+                <li id="DVD" onclick="foc('DVD','dvd')"><img src="dvd.png" alt="💻">DVD device</li>
+                <li id="Fan" onclick="foc('Fan','fan')"><img src="fan.png" alt="💻">Fan</li>
+            </ol>
+        </details>
+        <li id="monitor" onclick="foc('monitor','computer monitor')"><img src="computer monitor.png" alt="💻">Computer monitor</li>
+        <li id="Keyboard" onclick="foc('Keyboard','keyboard')"><img src="keybourd.png" alt="💻">Keyboard</li>
+        <li id="Mouse" onclick="foc('Mouse','mouse')"><img src="mouse.png" alt="💻">Mouse</li>
+        <li id="Table" onclick="foc('Table','table')"><img src="table.png" alt="💻">Table</li>
+        <li id="Chair" onclick="foc('Chair','chair')"><img src="chair.png" alt="💻">Chair</li>
+        <li id="Other" onclick="foc('Other','other')"><img src="MARKET.ico" alt="💻">Other</li>
+    </ul></div>    
+</aside>
+
+<main id="main" class="main">
+
+    <div id="homemain">
+<div style="margin-left: 10px;width: 46%;float: left;">
+    <h1 style="border-width: 0 0 2px 0;user-select: none;;border-color: rgb(184, 61, 39);border-style:solid;width: max-content;margin-top: 70px; color: rgb(243, 61, 76);">INTRODUCTION</h1>
+<br><p style="font-family:sans-serif;color: rgb(221, 126, 89);width: 100%;" >Welcome to Desktop Market your premier marketplace for buying and selling desktop PCs, office chairs, and desks. Whether you're upgrading your home office or outfitting a new workspace, we offer a diverse selection of high-quality equipment to meet your needs as the parts of PC or PC with his parts and office chairs, and desks. Explore our listings to find the perfect desktop PC, ergonomic chair, or stylish desk at competitive prices. Join our community today and make your workspace work for you!</p>
+
+
+<h2 style="border-width: 0 0 2px 0;user-select: none;;border-color: rgb(184, 61, 39);border-style:solid;width:max-content;margin-top: 70px; color: rgb(243, 61, 76);;">The Rules</h2>
+<ol id="rules">
+    <li>The item to be sold must be related to desktop PC.</li>
+    <li>When selling something, the description must be honest in order to get better service.</li>
+    <li>When entering communicating information, please enter it correctly in order to obtain a better service.</li>
+    <li>When communicating with the seller, please communicate honestly and ethically to get the best service.</li>
+    <li>When sending a complaint or suggestion, we hope that the content is purposeful and ethical.</li>
+</ol>
+</div>
+<div id="mid"></div>
+
+<div class="complaints">
+    <h2>The Suggestions</h2>
+    <textarea id="tarea"></textarea>
+    <form><button type="submit" id="scomp" >SEND</button></form>
+    
+</div>
+
+<div class="complaints" style="margin-top: 375px;">
+    <h2>The Complaints</h2>
+    <textarea id="tarea"></textarea>
+    <form><button type="submit" id="scomp">SEND</button></form>
+    
+</div>
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+</div>
+
+<div class="setting" id="appsett" style="font-family:sans-serif; ">
+<form id="formsetting" style="overflow: hidden;">
+
+<div id="forminfo">
+<p>FIRSTNAME:</p><input type="text" id="info1"><img onclick="editimg('info1')" id="edit1" src="edit.png" alt="edit" width="20px"><br>
+<p>LASTNAME:</p><input type="text" id="info2"><img onclick="editimg('info2')" id="edit2" src="edit.png" alt="edit" width="20px"><br>
+<p>EMAIL:</p><input type="email" id="info3"><img onclick="editimg('info3')" id="edit3" src="edit.png" alt="edit" width="20px"><br>
+<p>PASSWORD:</p><input type="password" id="info4"><img onclick="editimg('info4')" id="edit4" src="edit.png" alt="edit" width="20px">
+</div>
+
+<div id="check">
+    <p>FILTER:</p>
+    <input type="radio" onclick="checksave()" checked id="maincheck1_1" style="margin-left: 20px;" name="filter" ><b>Use</b>
+    <input type="radio" onclick="checksave()" id="maincheck1_2" style="margin-left: 32px;" name="filter"><b>Unuse</b>
+</div>
+
+<div id="check">
+    <p>SEARCH:</p>
+    <input type="radio" onclick="checksave()" checked id="maincheck2_1" style="margin-left: 20px;" name="sold"><b>Model</b>
+    <input type="radio" onclick="checksave()" checked id="maincheck2_2" style="margin-left: 14px;" name="sold"><b>Price</b>
+</div>
+
+<div id="check">
+    <p>POPULAR:</p>
+    <input type="radio" onclick="checksave()" id="maincheck3_1" style="margin-left: 10px;" name="popular"><b>1</b>
+    <input type="radio" onclick="checksave()" checked id="maincheck3_2" style="margin-left: 51px;" name="popular"><b>5</b>
+    <input type="radio" onclick="checksave()" id="maincheck3_3" style="margin-left: 60px;" name="popular"><b>10</b>
+</div>
+<button onclick="resetcheck(),update()">RESET SETTINGS</button>
+<button onclick="update()" style="display: none;" id="btnsave">SAVE UPDATE</button>
+<button type="button" id="logout" onclick="logoutpage()">LOG OUT</button>
+</form>
+
+</div>
+
+<div id="sellcont">
+
+    <div id="showdata"></div>
+
+    <div id="add" onclick="info_appear()"><center><h1>+</h1></center></div>
+    <div class="infosell" id="infosell">
+        <input type="file" onchange="imgupload(this.id);" id="imgload" style="display: none;" accept="image/jpg,image/png,image/jpeg">
+        <label for="imgload" id="btnload">
+            <img src="" alt="undefine" id="newimgload" style="display: none;">
+            <center id="infoimg"><img src="upload.png" alt="upload image" style="margin-top: 10px;" width="100px" height="100px"><br>
+            <p style="margin-top: 5px;font-size: 18px; color: rgb(55, 19, 71);">Upload image</p></center>
+        </label>
+
+        <select id="selectinfo1" onchange="selectleftmenu();" class="selectinfo">
+            <option value="computer">Computer</option>
+            <option value="computer monitor">Computer monitor</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="mouse">Mouse</option>
+            <option value="table">Table</option>
+            <option value="chair">Chair</option>
+            <option value="other">Other</option>
+        </select>
+        <select id="selectinfo2" class="selectinfo">
+            <option value="all">All</option>
+            <option value="case">Case</option>
+            <option value="motherboard">Motherboard</option>
+            <option value="processor">Processor</option>
+            <option value="graphics">Graphics card</option>
+            <option value="ram">Ram</option>
+            <option value="hard">Hard disk</option>
+            <option value="dvd">DVD device</option>
+            <option value="fan">Fan</option>
+        </select>
+
+        <form>
+            <p>Model</p><input type="text" placeholder=" The model" id="model" onkeypress="limitenter(this.id)">
+            <p>Price</p><input type="number" placeholder=" The price" id="price" onkeypress="limitenter(this.id)">
+            <p>Specifications</p> <br> <textarea id="specifications" rows="7px" cols="30%" style="background-color: transparent;outline: none;border: rgb(8, 49, 73) 1px solid;resize: none;"></textarea>
+            <p>To communicate with you</p>
+            <fieldset style="margin-top: 10px;width: 50%;height: 40px;border: rgb(8, 49, 73) 1px solid">
+                <legend>Your phone number</legend>
+                <pre><input type="number" id="numberphone" placeholder=" +xxxxxxxxxxxx"style="background-color: transparent;width:100%;border:none;margin-top:2px;outline: none;" onkeypress="limitenter(this.id)"></pre>
+            </fieldset>
+        </form>
+
+        <button id="saveinfo" onclick="creat();">SAVE</button>
+        <button id="closepage" onclick="info_unappear()">CLOSE</button>
+    </div>
+
+
+</div>
+
+<div id="buypage">
+
+<input type="text" id="search" onkeyup="searchdata(this.value)" placeholder="Search">
+
+<div id="databuypage" style="margin-top: 50px;transition: .8s;">
+</div>
+
+</div>
+
+<div id="savedpage" style="position: absolute;width: 100%;height: max-content;z-index: -2;">
+    <div id="savedinfopage" style="margin-top: 50px;transition: .8s;"></div>
+</div>
+
+<div id="popularpage" style="position: absolute;width: 100%;height: max-content;z-index: -2;">
+    <div id="popularinfopage" style="margin-top: 50px;transition: .8s;"></div>
+</div>
+
+<div id="viewdata">
+<div class="viewinfoafter" onclick="closeview()">X</div>
+<div id="viewinformation"></div>
+</div>
+
+</main>
+
+<footer class="footer" id="fotter">
+    
+<marquee direction="right" behavior="scroll" scrollamount="20" id="mt"><p>⇩⇩⇩ To communicate on social media ⇩⇩⇩</p></marquee>
+
+<div class="navigation">
+    <ul>
+        <li class="list up" id="com1" onmouseenter="onp('com1p');on('com1')"><a href="https://www.facebook.com/messages/t/rS40aB7S9Ucbxw6v" target="_blank"><img id="com1m" src="fl.png" alt="Facebook"></a><p id="com1p" >Facebook</p></li>
+
+        <li class="list" id="com2" onmouseenter="onp('com2p');on('com2')"><a href="https://wa.me/+201550319347" target="_blank"><img id="com2m" src="wl.png" alt="WhatsApp"></a><p id="com2p">WhatsApp</p></li>
+
+        <li class="list" id="com3" onmouseenter="onp('com3p');on('com3')"><a href="https://t.me/+201550319347" target="_blank"><img id="com3m" src="tl.png" alt="Telegram"></a><p id="com3p">Telegram</p></li>
+        
+        <div class="indicator"></div>
+    </ul>
+</div>
+</footer>
+    </div>
+<script src="market.js"></script>
+</body>
+</html>

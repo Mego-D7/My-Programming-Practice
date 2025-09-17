@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The best market to shopping">
+    <meta name="keywords" content="shopping,market,the easy market">
+    <title>DESKTOP MARKET</title>
+    <link rel="icon" href="MARKET.ico">
+    <link rel="stylesheet" href="MARKET.css">
+</head>
+<body>
+    <center><h1 style="cursor:default;margin-top: 30px;text-decoration: underline; color: rgb(245, 201, 5);">LOGIN OR SIGN-UP TO THE MARKET</h1></center>
+    <div class="sign">
+    <div id="login">
+        <center><h1 id="head_login">LOGIN</h1></center>
+        <form id="login_form">
+        <p id="info">ENTER THE EMAIL</p>
+        <input type="email" name="login_email" id="login_email" placeholder="Email" onkeyup="accesslogin()"> <br>
+        <p id="info">ENTER THE PASSWORD</p>
+        <input type="password" name="login_pass1" id="login_pass" placeholder="Passwors" onkeyup="accesslogin()">
+        <input type="button" value="Send" id="login_sub" onclick="loginpage()"><br>
+        <p id="forget">Forget Password?</p>
+    </form>
+    </div>
+    
+        <div id="sign_up">
+        <center><h1 id="head_sign">SIGN-UP</h1></center>
+        <form id="sign_form">
+        <p id="info">FIRST NAME </p> <p id="info2">LAST NAME</p>  
+        <input type="text" name="first name" id="name1" placeholder="First name" onkeyup="access()">
+        <input type="text" name="last name" id="name2" placeholder="Last name" onkeyup="access()"><br><br>
+        <p id="info">ENTER THE EMAIL</p>
+        <input type="email" name="sign_email" id="sign_email" placeholder="Email" onkeyup="access()"><br>
+        <p id="info">ENTER THE PASSWORD</p>
+        <input type="password" name="sign_pass1" id="sign_pass" placeholder="Passwors" onkeyup="access()"><br>
+        <p id="info">RE-ENTER THE PASSWORD</p>
+        <input type="password" name="sign_repas" id="sign_repass" placeholder="Re-Passwors" onkeyup="access()">
+        <input type="button" value="Send" id="sign_sub" onclick="saveinformation()">
+    </form>
+    </div>
+    
+    <center>
+        <div id="enimation" class="ani_login">
+        
+            <button id="btn-log" class="not_appbtn">LOGIN</button><br>
+            <button id="btn-sign" class="appbtn">SIGN-UP</button>
+            
+            
+                </div>
+            </center>
+
+</div>
+
+
+<script src="MARKET.js"></script>   
+</body>
+</html>
