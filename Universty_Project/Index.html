@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <div class="log_sign">
+    <!-- LOGIN -->
+    <div id="loginForm">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email" />
+      <input type="password" id="loginPassword" placeholder="Password" />
+      <div class="form-message" id="loginMessage"></div>
+      <button>Login</button>
+      <div class="toggle" onclick="showSignup()">Don't have an account? Sign up</div>
+    </div>
+
+    <!-- SIGNUP -->
+    <div id="signupForm" class="hidden">
+      <h2>Sign Up</h2>
+      <input type="text" id="text" placeholder="Username" />
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+      <div class="form-message" id="signupMessage"></div>
+      <button>Sign Up</button>
+      <div class="toggle" onclick="showLogin()">Already have an account? Login</div>
+    </div>
+  </div>
+
+
+  <div class="DE_Page" style="display: none;">
+
+    <button id="logout" class="Paying" style="position: absolute;" onclick="ShowPayment()">Pay For Filter Services!
+      <svg width="1em" height="0.6em" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+        <!-- Card Background -->
+        <rect width="300" height="180" rx="20" fill="#2D9CDB" />
+      
+        <!-- Chip -->
+        <rect x="30" y="40" width="50" height="35" rx="6" fill="#D9D9D9" />
+        <rect x="36" y="46" width="38" height="4" rx="2" fill="#B0B0B0" />
+        <rect x="36" y="54" width="38" height="4" rx="2" fill="#B0B0B0" />
+        <rect x="36" y="62" width="38" height="4" rx="2" fill="#B0B0B0" />
+      
+        <!-- Card Number -->
+        <text x="30" y="120" font-family="Arial, sans-serif" font-size="18" fill="white" letter-spacing="2">
+          1234 5678 9012 3456
+        </text>
+      
+        <!-- Name -->
+        <text x="30" y="150" font-family="Arial, sans-serif" font-size="14" fill="white">
+          CARD HOLDER
+        </text>
+      
+        <!-- Expiry -->
+        <text x="230" y="150" font-family="Arial, sans-serif" font-size="14" fill="white">
+          12/28
+        </text>
+      </svg>
+      
+      
+    </button>
+    <div style="text-align: right;">
+      <button id="logout" style="background: linear-gradient(125deg,rgba(57, 132, 122, 0.73),rgb(79, 205, 255));    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;" onclick="OUT()">Logout</button>
+    </div>
+    
+    
+        <label for="wordD" id="title">The Word:</label>
+        <input type="text" id="word" class="user_input">
+        
+        <label for="key"  id="title">The Key:</label>
+        <input type="number" id="key" class="user_input">
+        
+        <button id="result">Result</button>
+    
+        <button id="clear">Clear</button>
+    
+        <div id="F_Words" style="width: 100%;display: none;">
+        <h3  id="title">The Words Filter Table:</h3>
+        <table id="W_filter">
+            <tr id="table_H">
+                <th>Key</th>
+                <th>P_Word</th>
+                <th>N_Word</th>
+            </tr>
+        </table>
+
+
+
+        <h3  id="title">The Names Filter Table:</h3>
+        <table id="N_filter">
+            <tr id="table_H">
+                <th>Key</th>
+                <th>P_Word</th>
+                <th>N_Word</th>
+            </tr>
+        </table>
+        </div>
+
+        <h3  id="title">The Results Table:</h3>
+        <table id="all_results">
+            <tr id="table_H">
+                <th>Key</th>
+                <th>P_Word</th>
+                <th>N_Word</th>
+            </tr>
+        </table>
+    
+    </div>
+
+  <!-- PAYMENT -->
+  <div class="container" style="display: none;">
+    <button class="back-btn" onclick="UnShowPayment()">⇐ Back</button>
+
+    <h2>Payment Service</h2>
+    <h3 style="color: rgb(76, 170, 90);margin-bottom: 20px;text-align:center ;">Only $5/month</h3>
+    <form id="paymentForm">
+      <label for="name">Card Holder Name:</label>
+      <input type="text" id="name" required placeholder="Enter Your Name!"/>
+
+      <label for="card">Card Number:</label>
+      <input type="text" id="card" required placeholder="XXXX XXXX XXXX XXXX" />
+
+      <label for="exp">Exp. Date:</label>
+      <input type="text" id="exp" required placeholder="MM/YY" />
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" required placeholder="123" />
+
+      <button type="submit" class="btn">Add Card</button>
+    </form>
+    <div class="message" id="message"></div>
+  </div> 
+
+  <script src="Script.js"></script>
+  <script src="Operation.js"></script>
+</body>
+</html>
