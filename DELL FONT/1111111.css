@@ -1,0 +1,151 @@
+body {
+margin: 0;
+padding: 0;
+font-family: helvetica;Arial;sans-herif;
+background-color: black}
+.e1{background-image: url("1.jpg");
+	background-size: 100%;
+	
+width: 1000px;
+height: 600px;
+
+margin: auto;}
+.e2{
+
+	height: 100px;
+}
+#e2{
+	float: left;
+	width: 175px;
+	margin-top: 30px;
+
+}
+.e3 img{float: right;
+margin-right:10px;
+font-size: 10%;
+margin-top: 30px;
+ }
+.e4{
+font-size: 2.5em;
+	color: #3DC6EF;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+.e5{color: #d1d1d1;
+	font-size: 13px;
+	line-height: 150%;
+	margin-bottom: 20px;}
+	.e7 button{background-color: black;
+		color: #3DC6EF;
+	font-size: 1em;
+border: solid #3DC6EF 2px;
+padding: 9px}
+.e7 button:hover{
+	background-color:#3DC6EF;
+color:black; }
+#e8{/*background-color: white*/;
+width: 100%;
+height: 85px;
+position: absolute;
+left: 0px;
+margin-top: 30px;}
+#e9{width: 21%;
+	height: 100%;
+background-color: #007db8;
+float: left;}
+#e10{width: 69%;
+	height: 100%;
+background-color:#007db8;
+float: right;}
+.ll {padding: 0;
+	margin-top: 12px;
+	position: absolute;
+	width: 69%;	
+	left: 21%;
+}
+.ll  :hover{text-decoration: underline;}
+.ll li{
+width: 100px;
+	list-style: none;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+
+
+}
+.ll img {width: 50%}
+.ll span{
+	color: #ffffff;
+	font-size: 0.5em;}
+	
+		.ggg{margin: 0 auto;
+	margin-top: 110px;}
+.dd{color: #FFD220;
+font-size: 70px;
+float: left;
+  margin-left: 20px;
+  margin-right: 10px ;}
+.sup{float: left;
+font-size: 30px;
+padding-top: 15px}
+.sss{padding-top: 17px;
+	color: #e1e1e1;
+  font-size: 17px;}
+  .aaa{color: #3DC6EF;
+  font-size:14px;
+
+  text-decoration:none; }
+  .aaa:hover{text-decoration: underline;
+  	}
+  	.one{ margin-left: 10px;
+  		width: 30%;
+  		float: left;
+  
+  }
+.finish1{margin: auto;
+width: 100%;
+height: 40px;
+margin-top: 60px;
+background-color: black;
+
+position: absolute;
+left: 0px;}
+#finish2{color: white;
+	float: left;
+font-size: 15px;
+margin-right: 90px;}
+.finish1 a{
+text-decoration: none;
+color: #808080;
+margin-left: 6px;}
+.finish1 img{margin-left:5px }
+.finish1 a:hover{ text-decoration: underline;
+}
+#span{color: darkgray;}
+#finish2:hover{color: cyan;}
+
+#animation{width: 30px;
+height: 30px;
+background-color: blue;
+
+margin-top: 75px;
+z-index: 1;
+position: absolute;
+animation-name: bc;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes bc{
+	0%{background-color: blue;
+		width: 0%;
+		
+		}
+		
+
+	100%{background-color: #3DC6EF;
+		width: 98%}
+}
+}
+.animation div:hover{animation-play-state: paused;
+}
